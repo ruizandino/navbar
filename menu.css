@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+
+}
+.container{
+    max-width: 600px;
+    margin:auto;
+    font-size: 18px;
+    padding: 20px;   
+}
+.container p{
+    margin-bottom: 10px;
+}
+
+header{
+    height: 60px;
+    background:#5f5fd3;
+    display: flex;
+    padding: 0 20px;
+}
+.menu-toggle{
+   display:none;
+    margin-left:auto;
+    color:#fff;
+    line-height: 60px;
+    font-size: 25px;
+    cursor: pointer
+}
+.logo a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    text-transform: uppercase; 
+    font-family: 'Press Start 2P', cursive;
+}
+
+#menu{
+    margin-left: auto; /* para que esten del lado derecho*/
+}
+#menu ul  li{
+    display: inline-block;
+}
+
+#menu ul  li a{
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 8px;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+#menu ul li a:hover{
+    background: #7272e0;
+}
+.show{
+    height: 305px !important;
+}
+@media screen and (max-width:700px){
+
+    .menu-toggle{
+        display:block;
+    }
+    .menu-toggle img{
+        width: 20px;
+        height: 20px;
+    }
+
+    #menu{
+        background: #7272e0;
+        position: absolute;
+        top: 60px;
+        left:0;
+        width: 100%;
+        height: 0;
+      /*  border: 1px solid #eee;*/
+        overflow: hidden;
+        transition: .3s ease-out ;
+    }
+
+    #menu ul li{
+        display:block;
+        text-align: center;
+    }
+    #menu ul li a{
+        color: #fff;
+        font-size: 20px;
+        border-bottom: 1px solid #5f5fd3;
+        width: 100%;
+    }
+    #menu ul li a:hover{
+        background: #5959b8;
+    }
+    .container{
+        padding:10px;
+    }
+
+
+
+
+}
+
+
+
